@@ -1,0 +1,19 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Alegreya";
+}
+.themeOneBackgroundMain{
+    background:$themeOneBlueBackground;
+}
+.themeTwoBackgroundMain{
+    background:$themeTwoBlueBackground;
+}
+.themeThreeBackgroundMain{
+    background:$themeThreeBlueBackground;
+}
+.App{
+    width:100%;
+    min-height:100vh;
+}

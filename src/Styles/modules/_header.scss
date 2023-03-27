@@ -1,0 +1,77 @@
+.themeOneHeader{
+    color:$themeOneTextColorTwo;
+}
+.themeTwoHeader{
+    color:$themeTwoTextColorOne;
+}
+.themeThreeHeader{
+    color:$themeThreeTextColorOne;
+}
+.themeOneIntro{
+    color:$themeOneTextColorTwo;
+}
+.themeTwoIntro{
+    color:$themeTwoTextColorOne;
+}
+.themeThreeIntro{
+    color:$themeThreeTextColorOne;
+}
+.themeOneThemeNumber{
+    color:$themeOneTextColorTwo;
+}
+.themeTwoThemeNumber{
+    color:$themeTwoTextColorOne;
+}
+.themeThreeThemeNumber{
+    color:$themeThreeTextColorOne;
+}
+.labelDesign{
+    width:62px;
+    height:22px;
+    border:none;
+    border-radius:20px;
+    position:relative;
+    bottom:10px;
+}
+.circleOne::before{
+    background:$themeOneEqualBackground;
+}
+.circleOne::before:hover{
+    background:$themeOneEqualBackgroundOpacity;
+}
+.circleTwo::before{
+    background:$themeTwoEqualBackground;
+}
+.circleTwo::before:hover{
+    background:$themeTwoEqualBackgroundOpacity;
+}
+.circleThree::before{
+    background:$themeThreeEqualBackground;
+}
+.circleThree::before:hover{
+    background:$themeThreeEqualBackgroundOpacity;
+}
+.labelDesign::before{
+    position: absolute;
+    content:"";
+    width:15px;
+    height:15px;
+    top:4px;
+    border-radius:50%;
+    transition:0.4s;
+    cursor:pointer
+}
+.one::before{
+    left:2px;
+}
+.two::before{
+    left:24px;
+}
+.three::before{
+    left:44px;
+}
+.serial-theme{
+    position: relative;
+    bottom:10px;
+    width:62px;
+}

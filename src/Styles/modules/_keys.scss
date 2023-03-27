@@ -1,0 +1,85 @@
+.themeOnePrimaryKeys{
+    background: $themeOneKeyBackgroundOpacity;
+    color:$themeOneTextColorOne;
+    box-shadow: 3px 3px 0px $themeOneKeytShadow;
+}
+.themeOnePrimaryKeys:hover{
+    background:$themeOneKeyBackground;
+}
+.themeTwoPrimaryKeys{
+    background: $themeTwoKeytBackground;
+    color:$themeTwoTextColorOne;
+    box-shadow: 3px 3px 0px $themeTwoKeyShadow;
+}
+.themeTwoPrimaryKeys:hover{
+    background:$themeTwoKeyBackgroundOpacity;
+    color:$themeTwoTextColorOne;
+}
+.themeThreePrimaryKeys{
+    background: $themeThreeKeyBackground;
+    color:$themeThreeTextColorOne;
+    box-shadow: 3px 3px 0px $themeThreeKeyShadow;
+}
+.themeThreePrimaryKeys:hover{
+    background:$themeThreeKeyBackgroundOpacity;
+    color:$themeThreeTextColorOne;
+}
+.themeOneDangerKeys{
+    background: $themeOneDelResetBackground;
+    color:$themeOneTextColorTwo;
+    box-shadow: 3px 3px 0px $themeOneDelResetShadow;
+}
+.themeOneDangerKeys:hover{
+    background:$themeOneDelResetBackgroundOpacity;
+    color:$themeOneTextColorTwo;
+}
+.themeTwoDangerKeys{
+    background: $themeTwoResetBackground;
+    color:$themeTwoTextColorTwo;
+    box-shadow: 3px 3px 0px $themeTwoResetShadow;
+}
+.themeTwoDangerKeys:hover{
+    background:$themeTwoResetBackgroundOpacity;
+    color:$themeTwoTextColorTwo;
+}
+.themeThreeDangerKeys{
+    background: $themeThreeResetBackground;
+    color:$themeThreeTextColorThree;
+    box-shadow: 3px 3px 0px $themeThreeResetBackground;
+}
+.themeThreeDangerKeys:hover{
+    background:$themeThreeResetBackgroundOpacity;
+    color:$themeThreeTextColorThree;
+}
+.themeOneResultKeys{
+    background: $themeOneEqualBackground;
+    color:$themeOneTextColorTwo;
+    box-shadow: 3px 3px 0px $themeOneEqualShadow;
+}
+.themeOneResultKeys:hover{
+    background:$themeOneEqualBackgroundOpacity;
+    color:$themeOneTextColorTwo;
+}
+.themeTwoResultKeys{
+    background: $themeTwoEqualBackground;
+    color:$themeTwoTextColorTwo;
+    box-shadow: 3px 3px 0px $themeTwoEqualShadow;
+}
+.themeTwoResultKeys:hover{
+    background:$themeOneEqualBackgroundOpacity;
+    color:$themeTwoTextColorTwo;
+}
+.themeThreeResultKeys{
+    background: $themeThreeEqualBackground;
+    color:$themeThreeTextColorThree;
+    box-shadow: 3px 3px 0px $themeThreeEqualShadow;
+}
+.themeThreeResultKeys:hover{
+    background:$themeThreeEqualBackgroundOpacity;
+    color:$themeThreeTextColorThree;
+}
+.btnwidth{
+    width:100%;
+    min-width: fit-content;
+    padding:4px 8px;
+}

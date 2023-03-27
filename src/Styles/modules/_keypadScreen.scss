@@ -1,0 +1,50 @@
+.card{
+    border:none;
+    outline: none;
+    .formWidth{
+        border:none;
+        outline:none;
+        position: relative;
+        left:-10px;
+        width:104%;
+    }
+    .themeOneBackgroundKeyPad{
+        background: $themeOneToggleBackground;
+    }
+    .themeTwoBackgroundKeyPad{
+        background: $themeTwoToggleBackground;
+    }
+    .themeThreeeBackgroundKeyPad{
+        background: $themeThreeToggleBackground;
+    }
+    .themeOneBackgroundScreen{
+        background:$themeOneScreenBackground;
+        color:$themeOneTextColorTwo;
+    }
+    .themeOneBackgroundScreen:focus{
+        background:$themeOneScreenBackground;
+        color:$themeOneTextColorTwo;
+    }
+    .themeTwoBackgroundScreen{
+        background:$themeTwoScreenBackground;
+        color:$themeTwoTextColorOne;
+    }
+    .themeTwoBackgroundScreen:focus{
+        background:$themeTwoScreenBackground;
+        color:$themeTwoTextColorOne;
+    }
+    .themeThreeBackgroundScreen{
+        background:$themeThreeScreenBackground;
+        color:$themeThreeTextColorOne;
+    }
+    .themeThreeBackgroundScreen:focus{
+        background:$themeThreeScreenBackground;
+        color:$themeThreeTextColorOne
+    }
+    #screen{
+        text-align: right;
+        font-size:45px;
+        flex:1;
+        box-shadow:none;
+    }
+}
