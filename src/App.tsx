@@ -29,7 +29,7 @@ function App() {
   }
   const showResult=()=>{
     let postfix=infixToPostfix(number);
-    let res=(evaluate(postfix)).toString();
+    let res=(evaluate(postfix)).toLocaleString();
     setNumber(res);
   }
   return (

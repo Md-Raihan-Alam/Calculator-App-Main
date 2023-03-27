@@ -1,46 +1,60 @@
-# Getting Started with Create React App
+# Frontend Mentor - Calculator app solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
 
-### `npm start`
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Overview
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### The challenge
 
-### `npm test`
+Users will be able to:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- See the size of the elements adjust based on their device's screen size
+- Perform mathmatical operations like addition, subtraction, multiplication, and division
+- Adjust the color theme based on their preference
+- **Bonus**: Have their initial theme preference checked using `prefers-color-scheme` and have any additional changes saved in the browser
 
-### `npm run build`
+### Screenshot
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="https://github.com/Md-Raihan-Alam/Calculator-App-Main/blob/main/Screenshot/Screenshot-1.png" alt="Caculator-Theme-1" width="300" height="300">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br/>
+<br/>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img src="https://github.com/Md-Raihan-Alam/Calculator-App-Main/blob/main/Screenshot/Screenshot-2.png" alt="Caculator-Theme-2" width="300" height="300">
 
-### `npm run eject`
+### Links
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Live Site URL: [Netlify-React-App](https://timely-twilight-e16e98.netlify.app/)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## My process
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Built with
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [React](https://reactjs.org/) - JS library
+- [Bootstrap](https://getbootstrap.com/) - CSS Framework
+- [SASS](https://sass-lang.com/) - CSS Framework
+- [TypeScript](https://www.typescriptlang.org/) - Strong Version Of JS
+- GridBox
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### What I learned
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+I have general idea how to use typescript with react now, and used my own infixToPostfix and Postfix evalution to calculate answer. I have also added Bootstrap and Sass
+
+## Author
+
+- Frontend Mentor - [@Md-Raihan-Alam](https://www.frontendmentor.io/profile/Md-Raihan-Alam)
+- Twitter - [@MdRaiha48799193](https://www.twitter.com/MdRaiha48799193)
