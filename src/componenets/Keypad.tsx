@@ -56,10 +56,16 @@ const Keypad:React.FC<Props>=({updateNumber,deleteNumber,showResult})=>{
         <div className="col-3">
           <button id="primary" className="btn themeOnePrimaryKeys btnwidth mb-2" onClick={()=>updateNumber("*")}>*</button>
         </div>
-        <div className="col-6">
+        <div className="col-3">
+          <button id="reset" className="btn themeOneDangerKeys w-100 mb-2" onClick={()=>updateNumber("(")}>(</button>
+        </div>
+        <div className="col-3">
+          <button id="reset" className="btn themeOneDangerKeys w-100 mb-2" onClick={()=>updateNumber(")")}>)</button>
+        </div>
+        <div className="col-3">
           <button id="reset" className="btn themeOneDangerKeys w-100 mb-2" onClick={()=>deleteNumber(2)}>RESET</button>
         </div>
-        <div className="col-6">
+        <div className="col-3">
           <button id="result" className="btn themeOneResultKeys w-100 mb-2" onClick={()=>showResult()}>=</button>
         </div>
       </div>

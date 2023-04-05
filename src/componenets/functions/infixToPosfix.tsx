@@ -1,48 +1,47 @@
-export const infixToPostfix = (infix: string): string => {
-    const postfix: string[] = [];
-    const stack: string[] = [];
-    let operand = '';
-  
-    const precedence: {[key: string]: number} = {
-      '+': 1,
-      '-': 1,
-      '*': 2,
-      '/': 2,
-    };
-  
-    for (let i = 0; i < infix.length; i++) {
-      const token = infix[i];
-  
-      if (!isNaN(Number(token)) || token === '.') {
-        operand += token;
-        continue;
+const infixToPostfix=(expression: string): string =>{
+  var result = "";
+  var stack: string[] = [];
+  var operators = ["*", "/", "+", "-"];
+  var tokens = expression.match(/(-?(?:\d+\.?\d*|-?\.\d*))|[()+\-*/]/gi);
+  var containsInvalidChars = /[^()+\-*/0-9.\s]/gi.test(expression);
+
+  if (Array.isArray(tokens) && !containsInvalidChars) {
+    for (var i = 0; i < tokens.length; i++) {
+      var token = tokens[i];
+
+      if (operators.indexOf(token) > -1) {
+        while (
+          stack.length &&
+          operators.indexOf(stack[stack.length - 1]) > -1
+        ) {
+          var operator = stack.pop();
+          result += " " + operator;
+        }
+
+        stack.push(token);
+      } else if (token === "(") {
+        stack.push(token);
+      } else if (token === ")") {
+        var item = stack.pop();
+
+        while (item !== "(") {
+          result += " " + item;
+          item = stack.pop();
+        }
+      } else if (token) {
+        result += " " + token;
       }
-  
-      if (operand) {
-        postfix.push(operand);
-        operand = '';
-      }
-  
-      if (token === ' ') {
-        continue;
-      }
-  
-      while (
-        stack.length > 0 &&
-        precedence[stack[stack.length - 1]] >= precedence[token]
-      ) {
-        postfix.push(stack.pop()!);
-      }
-      stack.push(token);
     }
-  
-    if (operand) {
-      postfix.push(operand);
-    }
-  
-    while (stack.length > 0) {
-      postfix.push(stack.pop()!);
-    }
-  
-    return postfix.join(' ');
-  };
+  }
+
+  while (stack.length) {
+    var item = stack.pop();
+    result += " " + item;
+  }
+
+  result = result.trim();
+
+  return result.length >= 1 ? result : "NaN";
+}
+
+export default infixToPostfix;

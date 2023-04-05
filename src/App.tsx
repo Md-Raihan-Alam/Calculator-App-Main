@@ -1,8 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Styles/App.scss'
-import { infixToPostfix } from './componenets/functions/infixToPosfix';
-import { evaluate } from './componenets/functions/evaluate';
+import infixToPostfix  from './componenets/functions/infixToPosfix';
+import evaluate  from './componenets/functions/evaluate';
 import Header from './componenets/Header';
 import Screen from './componenets/Screen';
 import Keypad from './componenets/Keypad';
@@ -29,7 +29,7 @@ function App() {
   }
   const showResult=()=>{
     let postfix=infixToPostfix(number);
-    let res=(evaluate(postfix)).toLocaleString();
+    let res=evaluate(postfix).toLocaleString();
     setNumber(res);
   }
   return (
