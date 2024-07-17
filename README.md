@@ -57,4 +57,3 @@ I have general idea how to use typescript with react now, and used my own infixT
 ## Author
 
 - Frontend Mentor - [@Md-Raihan-Alam](https://www.frontendmentor.io/profile/Md-Raihan-Alam)
-- Twitter - [@MdRaiha48799193](https://www.twitter.com/MdRaiha48799193)
